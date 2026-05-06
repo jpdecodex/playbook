@@ -1,0 +1,24 @@
+# Environment
+.env
+.env.local
+
+# Data
+data/
+*.csv
+*.xlsx
+*.db
+*.sqlite
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/settings.json
+.idea/
