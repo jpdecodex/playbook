@@ -1,7 +1,7 @@
 # ADR 002 — Cloudflare as Primary Infrastructure
 
 **Date:** 2026-05
-**Status:** Active
+**Status:** Superseded by [ADR 005](005-quarto-github-pages.md) for static site deployments (2026-06)
 
 ## Decision
 
@@ -23,3 +23,7 @@ Need hosting that is: free at personal scale, globally distributed, no server ma
 - No code should require a persistent server process.
 - Backend logic lives in Workers or is handled client-side.
 - Scheduled jobs use Workers Cron Triggers, not external schedulers.
+
+## Supersession note
+
+For static dashboards and sites (Life OS, dog-capitals, brand pages), Quarto + GitHub Pages is now the standard — see ADR 005. Cloudflare Workers remains valid for dynamic API endpoints if needed in the future.
