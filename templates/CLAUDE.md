@@ -2,44 +2,26 @@
 
 > Replace all [bracketed] fields before committing. Delete this line.
 
-## Project
+## What this repo does
 
-**Name:** [Project name]
-**Owner:** Juan Papes
-**Purpose:** [One sentence: what this repo does and why it exists]
-**Type:** [dashboard | etl-pipeline | strategy-research | business-ops]
-
-## Stack
-
-| Layer | Technology |
-|-------|-----------|
-| [Frontend] | [HTML · Vanilla JS · CSS] |
-| [Backend] | [Python · Cloudflare Workers] |
-| [Data] | [Google Sheets · SQLite] |
-| Hosting | Cloudflare Pages |
-| Version control | GitHub |
-
-## Conventions
-
-Follow jpdecodex/playbook standards:
-- Naming: kebab-case repos/files, snake_case Python, camelCase JS
-- Commits: [scope] short imperative description
-- Language: English everywhere
-- Data: never commit data/, .env, or sensitive values
-
-## Restrictions
-
-- No third-party platforms with lock-in
-- No heavy JS frameworks without justification
-- No sensitive data in the repo
-- [Add project-specific restrictions here]
+[One or two sentences: what this repo does, and why it exists. Include stack/hosting only if load-bearing.]
 
 ## Current state
 
-[Describe what exists, what works, what is in progress. Update this each session.]
+[What exists and works today, in the current codebase — not a chronological log. Update this every session.]
 
-## Session rules
+## Next action
 
-1 chat = 1 concrete task.
-At the start of each session: read this file + describe the current task.
-At the end: commit working code, update current state if needed.
+[The next concrete thing to do. One item or a short list — not a backlog dump.]
+
+## Architecture decisions
+
+[Standing technical decisions and constraints: stack choices, broker/data boundaries, naming/commit conventions specific to this repo, things a future session must not violate. Follow jpdecodex/playbook standards unless overridden here.]
+
+---
+
+Every session closes by updating this file (What this repo does / Current state / Next action / Architecture decisions) and committing:
+
+    docs: session close YYYY-MM-DD
+
+Do not keep a session log or history section in this file — session history is `git log -p CLAUDE.md`.
