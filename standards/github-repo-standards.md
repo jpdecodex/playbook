@@ -8,16 +8,18 @@ Standards and decisions for all jpdecodex repos. Source: Notion GitHub Audit (Ju
 
 | Repo | Purpose | Status |
 |------|---------|--------|
-| jpdecodex/es-core-vol-targeting | Futures vol targeting, IBKR | Active — merging into vol-targeting (July 2026) |
-| jpdecodex/etf-vol-targeting | ETF vol targeting, Balanz | Active — merging into vol-targeting (July 2026) |
-| jpdecodex/quant-strategies | Perpetuals prototype (Strategy5) | Active until July 2026 — merging into vol-targeting |
+| jpdecodex/es-core-vol-targeting | Futures vol targeting, IBKR | Active |
+| jpdecodex/etf-vol-targeting | ETF vol targeting, Balanz | Active — building IOL adapter, deploying ETF v1 |
+| jpdecodex/quant-strategies | Perpetuals prototype (Strategy5) | Dormant / archived — BTC deployment parked indefinitely |
 | jpdecodex/life-os | Personal dashboard | Migrated to Quarto + GitHub Pages |
 | jpdecodex/playbook | Engineering standards, public | Active |
 | jpdecodex/dog-capitals | Dog Capital public site | Active — jpdecodex.github.io/dog-capitals |
 
 ---
 
-## July 2026 consolidation plan
+## July 2026 consolidation plan — DEFERRED
+
+**Status: deferred to the Notion backlog.** Trigger to revisit: the perpetuals adapter build. Current focus is ETF v1 (IOL adapter) and Dog Capital's ES Core research page, not this merge.
 
 Merge `es-core-vol-targeting` + `etf-vol-targeting` + `quant-strategies` into a single `jpdecodex/vol-targeting` monorepo.
 

@@ -7,7 +7,7 @@ Central engineering playbook for every repo built by Juan Papes: naming/commit c
 Standards defined for git conventions and repo structure (`standards/`). Five ADRs recorded: no heavy JS frameworks, Cloudflare stack, Sheets as input layer, no platform lock-in, Quarto + GitHub Pages. CLAUDE.md template (`templates/CLAUDE.md`) just updated to the 4-section session-loop standard.
 
 ## Next action
-Keep `standards/github-repo-standards.md` and the ADRs current as the ecosystem consolidates — in particular, track the July 2026 plan to merge es-core-vol-targeting, etf-vol-targeting, and quant-strategies into a new `jpdecodex/vol-targeting` monorepo and retire the three source repos.
+Keep `standards/github-repo-standards.md` and the ADRs current. The es-core-vol-targeting/etf-vol-targeting/quant-strategies → `jpdecodex/vol-targeting` consolidation is deferred to the Notion backlog (trigger: perpetuals adapter build) — focus is ETF v1 (IOL adapter) and Dog Capital's ES Core research page for now.
 
 ## Architecture decisions
 - No third-party platforms with data lock-in (no Notion, Airtable, Zapier) in any repo.
