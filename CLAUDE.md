@@ -1,36 +1,17 @@
 # CLAUDE.md — jpdecodex/playbook
 
-This is the engineering playbook for all projects built by Juan Papes.
-When working in any repo in this ecosystem, read the relevant standards before making changes.
+## What this repo does
+Central engineering playbook for every repo built by Juan Papes: naming/commit conventions, repo-structure requirements, architecture decision records (ADRs), and the CLAUDE.md template all repos are bootstrapped from.
 
-## Owner
+## Current state
+Standards defined for git conventions and repo structure (`standards/`). Five ADRs recorded: no heavy JS frameworks, Cloudflare stack, Sheets as input layer, no platform lock-in, Quarto + GitHub Pages. CLAUDE.md template (`templates/CLAUDE.md`) just updated to the 4-section session-loop standard.
 
-Juan Papes — Mechanical Engineer (ITBA). Builder of systematic trading strategies,
-personal finance systems, and business infrastructure.
+## Next action
+Keep `standards/github-repo-standards.md` and the ADRs current as the ecosystem consolidates — in particular, track the July 2026 plan to merge es-core-vol-targeting, etf-vol-targeting, and quant-strategies into a new `jpdecodex/vol-targeting` monorepo and retire the three source repos.
 
-## Ecosystem repos
-
-- life-os — Personal dashboard aggregator (public)
-- es-futures-strategy — ES Futures systematic strategies (private)
-- net-worth-tracker — Multi-currency net worth tracker (private)
-- revolucion-dulce — Business systems (private)
-
-## Global rules
-
-- Language: English everywhere. Code, comments, commits, docs, variables, READMEs.
-- No third-party platforms with data lock-in (no Notion, no Airtable, no Zapier).
-- No heavy JS frameworks unless explicitly justified per project.
+## Architecture decisions
+- No third-party platforms with data lock-in (no Notion, Airtable, Zapier) in any repo.
+- No heavy JS frameworks without explicit justification.
 - Every repo must have: CLAUDE.md, README.md, .gitignore, .env.example, docs/.
-- Sensitive data (credentials, financial values) never in public repos.
-- Commit format: [scope] short imperative description (e.g. [trading] add gap strategy skeleton)
-
-## Before starting any task
-
-1. Read this file
-2. Read the target repo's CLAUDE.md
-3. Read standards/repo-structure.md if creating files or folders
-4. Check decisions/ if the task touches architecture choices
-
-## Standards location
-
-All standards live in jpdecodex/playbook. When in doubt, refer there first.
+- Commit format: `[scope] short imperative description`.
+- Language: English everywhere (code, comments, commits, docs).
