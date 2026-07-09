@@ -9,7 +9,7 @@ Standards and decisions for all jpdecodex repos. Source: Notion GitHub Audit (Ju
 | Repo | Purpose | Status |
 |------|---------|--------|
 | jpdecodex/es-core-vol-targeting | Futures vol targeting, IBKR | Active |
-| jpdecodex/etf-vol-targeting | ETF vol targeting, Balanz | Active — building IOL adapter, deploying ETF v1 |
+| jpdecodex/spy-core-vol-targeting | SPY vol targeting, Balanz/IOL/Binance | Active |
 | jpdecodex/quant-strategies | Perpetuals prototype (Strategy5) | Dormant / archived — BTC deployment parked indefinitely |
 | jpdecodex/life-os | Personal dashboard | Migrated to Quarto + GitHub Pages |
 | jpdecodex/playbook | Engineering standards, public | Active |
@@ -21,7 +21,7 @@ Standards and decisions for all jpdecodex repos. Source: Notion GitHub Audit (Ju
 
 **Status: deferred to the Notion backlog.** Trigger to revisit: the perpetuals adapter build. Current focus is ETF v1 (IOL adapter) and Dog Capital's ES Core research page, not this merge.
 
-Merge `es-core-vol-targeting` + `etf-vol-targeting` + `quant-strategies` into a single `jpdecodex/vol-targeting` monorepo.
+Merge `es-core-vol-targeting` + `spy-core-vol-targeting` + `quant-strategies` into a single `jpdecodex/vol-targeting` monorepo.
 
 Target structure:
 
@@ -39,7 +39,7 @@ vol-targeting/
 └── memory/facts/          ← persistent Claude Code context
 ```
 
-Delete after migration: `es-core-vol-targeting`, `etf-vol-targeting`, `quant-strategies`, `es-futures-strategy`.
+Delete after migration: `es-core-vol-targeting`, `spy-core-vol-targeting`, `quant-strategies`, `es-futures-strategy`.
 
 ---
 
