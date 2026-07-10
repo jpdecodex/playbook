@@ -6,7 +6,7 @@ Engineering standards, conventions, and architecture decisions for all systems b
 
 ## Who builds this
 
-Mechanical Engineer (ITBA, Buenos Aires) turned systems builder. I design and operate systematic trading strategies, personal finance systems, and business infrastructure — all built in-house, without third-party platforms.
+Mechanical Engineer turned systems builder. I design and operate systematic trading strategies, personal finance systems, and business infrastructure — all built in-house, without third-party platforms.
 
 My approach: every system I run, I own. No Notion. No Airtable. No black boxes. Code, data, and logic live in repos I control and understand completely.
 
