@@ -1,6 +1,6 @@
 # jpdecodex/playbook
 
-Engineering standards, conventions, and architecture decisions for all systems built by Juan Papes.
+Engineering standards, conventions, and architecture decisions for all systems built by jpdecodex.
 
 ---
 

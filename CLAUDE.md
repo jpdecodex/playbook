@@ -1,7 +1,7 @@
 # CLAUDE.md — jpdecodex/playbook
 
 ## What this repo does
-Central engineering playbook for every repo built by Juan Papes: naming/commit conventions, repo-structure requirements, architecture decision records (ADRs), and the CLAUDE.md template all repos are bootstrapped from.
+Central engineering playbook for every repo built by jpdecodex: naming/commit conventions, repo-structure requirements, architecture decision records (ADRs), and the CLAUDE.md template all repos are bootstrapped from.
 
 ## Current state
 Standards defined for git conventions and repo structure (`standards/`). Five ADRs recorded: no heavy JS frameworks, Cloudflare stack, Sheets as input layer, no platform lock-in, Quarto + GitHub Pages. CLAUDE.md template (`templates/CLAUDE.md`) just updated to the 4-section session-loop standard.
