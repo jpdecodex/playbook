@@ -52,9 +52,29 @@ playbook/
 │   ├── README.md           ← base README template
 │   ├── .gitignore          ← base gitignore
 │   └── .env.example        ← environment variable template
-└── decisions/
-    ├── 001-no-frameworks.md
-    ├── 002-cloudflare-stack.md
-    ├── 003-sheets-as-input-layer.md
-    └── 004-no-platform-lock-in.md
+├── decisions/
+│   ├── 001-no-frameworks.md
+│   ├── 002-cloudflare-stack.md
+│   ├── 003-sheets-as-input-layer.md
+│   └── 004-no-platform-lock-in.md
+└── .claude/commands/
+    └── audit-repos.md      ← /audit-repos slash command (see below)
 ```
+
+## Custom Claude Code commands
+
+### `/audit-repos`
+
+Reporting-only audit of every repo under the projects root: last commit, CLAUDE.md accuracy, ACTIVE/STALE/PARKED/DEAD classification, clutter flags (stale branches, committed secrets, duplicate logic), and a professional-structure score (README/deps/.gitignore/tests/LICENSE/commit quality) per repo. Ends with a summary of what's safe to archive, what needs a CLAUDE.md fix, and what isn't presentable if shown to another developer.
+
+Fixes nothing — it only reports.
+
+**Where it actually lives:** Claude Code only discovers project slash commands in `.claude/commands/` at the folder a session is *launched* from — it does not walk into subdirectories. Since this audit needs to see every sibling repo, the working copy that Claude Code actually reads lives at `C:\Users\juan\projects\.claude\commands\audit-repos.md` (the projects root, not tracked by any repo). The copy in this repo, `.claude/commands/audit-repos.md`, is the documented source of truth — if you ever edit the prompt, edit both, or edit here and re-copy to the root.
+
+Run it from a Claude Code session launched at `C:\Users\juan\projects` by typing:
+
+```
+/audit-repos
+```
+
+This was the only cross-repo audit tooling in the ecosystem as of 2026-07-24. An earlier `standards/github-repo-standards.md` recorded a June 2026 one-off manual repo-list audit — removed 2026-08-28 once it went permanently stale (it still listed a repo deleted weeks earlier); a repo list is derivable directly from `2.repos/`/`3.no-repos/`, not worth hand-maintaining here.
