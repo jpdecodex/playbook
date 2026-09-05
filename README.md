@@ -22,10 +22,10 @@ This repo is the single source of truth for how every project in my ecosystem is
 
 | Repo | Description | Visibility |
 |------|-------------|------------|
-| [life-os](https://github.com/jpdecodex/life-os) | Personal life operating system dashboard | Public |
-| es-futures-strategy | Systematic long-only strategies on E-mini S&P 500 | Private |
-| net-worth-tracker | Multi-currency net worth tracker (USD, EUR, ARS, BGN) | Private |
-| revolucion-dulce | Business systems for Revolución Dulce | Private |
+| [es-core-vol-targeting](https://github.com/jpdecodex/es-core-vol-targeting) | Volatility-targeting strategy on S&P 500 + tactical futures sleeve, live IBKR execution | Private |
+| [spy-core-vol-targeting](https://github.com/jpdecodex/spy-core-vol-targeting) | Volatility-targeting strategy, IOL/Binance execution | Private |
+| [dog-capitals](https://github.com/jpdecodex/dog-capitals) | Public Quarto showcase site for ES Core / SPY Core | Public |
+| [playbook](https://github.com/jpdecodex/playbook) | This repo — engineering standards and conventions | Public |
 
 ## Philosophy
 
@@ -45,18 +45,17 @@ playbook/
 ├── CLAUDE.md               ← global Claude Code context
 ├── standards/
 │   ├── repo-structure.md   ← standard folder layout by repo type
-│   ├── git-conventions.md  ← commits, branches, versioning
-│   └── naming.md           ← file, variable, and repo naming rules
+│   └── git-conventions.md  ← commits, branches, versioning
 ├── templates/
 │   ├── CLAUDE.md           ← base template copied to each new repo
 │   ├── README.md           ← base README template
-│   ├── .gitignore          ← base gitignore
-│   └── .env.example        ← environment variable template
+│   └── .gitignore          ← base gitignore
 ├── decisions/
 │   ├── 001-no-frameworks.md
 │   ├── 002-cloudflare-stack.md
 │   ├── 003-sheets-as-input-layer.md
-│   └── 004-no-platform-lock-in.md
+│   ├── 004-no-platform-lock-in.md
+│   └── 005-quarto-github-pages.md
 └── .claude/commands/
     └── audit-repos.md      ← /audit-repos slash command (see below)
 ```
