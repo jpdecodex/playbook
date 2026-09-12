@@ -3,11 +3,11 @@
 ## What this repo does
 Central engineering playbook for every repo built by jpdecodex: naming/commit conventions, repo-structure requirements, architecture decision records (ADRs), and the CLAUDE.md template all repos are bootstrapped from.
 
-## Current state (2026-08-28)
-Scope narrowed after a full environment audit found `standards/github-repo-standards.md` (a June 2026 one-off repo-list snapshot) permanently out of date — it still listed a repo deleted weeks earlier. Removed rather than maintained going forward: a repo list is derivable from `2.repos/`/`3.no-repos/` directly, not worth hand-keeping here. What actually stays alive: the CLAUDE.md template (`templates/CLAUDE.md`, 5 sections including the optional `Origin`) and the `/audit-repos` slash command (documented in README.md — the working copy Claude Code reads lives at the projects root, this repo holds the source-of-truth copy). Five ADRs recorded: no heavy JS frameworks, Cloudflare stack, Sheets as input layer, no platform lock-in, Quarto + GitHub Pages.
+## Current state (2026-09-05)
+Six ADRs now recorded: no heavy JS frameworks, Cloudflare stack, Sheets as input layer, no platform lock-in, Quarto + GitHub Pages, and (new) ADR 006 — a common 5-element project methodology (Current State / Next Action / Decision Log / Evidence / Target Impression), applied across every project in the workspace, format adapted per project, role never dropped. `templates/CLAUDE.md` updated to 6 sections (added `Target Impression`) as the reference implementation for code repos.
 
 ## Next action
-Candidate ADR, not yet written: generalize the "Regla de Oro" from `es-core-vol-targeting/docs/ES_Core_PLAN_DEFINITIVO.md` ("nothing gets published/sent/applied without being defensible with real criteria and citations") beyond ES Core specifically — this repo's existing ADRs cover infrastructure choices, nothing covers rigor/defensibility of a claim. Don't write it yet; revisit once the broader projects-root reorganization (in progress, 2026-08-28) settles.
+Pointers sent, ADR 006 adopted across active projects (confirmed in the 2026-09-11/12 workspace audit — CLAUDE.md now exists for revolucion-dulce and job-search too, Target Impression sections in place where they apply). No open action here right now — revisit only if a new project's CLAUDE.md drifts from the 5-element shape.
 
 ## Architecture decisions
 - No third-party platforms with data lock-in (no Notion, Airtable, Zapier) in any repo.

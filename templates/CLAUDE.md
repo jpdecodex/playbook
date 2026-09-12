@@ -18,13 +18,17 @@
 
 [Standing technical decisions and constraints: stack choices, broker/data boundaries, naming/commit conventions specific to this repo, things a future session must not violate. Follow jpdecodex/playbook standards unless overridden here.]
 
+## Target Impression
+
+(Optional — see ADR 006. One line: the specific, calibrated judgment a qualified outsider should reach after actually looking closely at this project's evidence. Skip entirely for projects nobody external evaluates.)
+
 ## Origin
 
 (Optional. Populate only for repos that started as a captured idea in Claude.ai chat before becoming a repo. Leave this section out entirely for repos where it doesn't apply — don't leave it blank-but-present.)
 
 ---
 
-Every session closes by updating this file (What this repo does / Current state / Next action / Architecture decisions) and committing:
+Every session closes by updating this file (What this repo does / Current state / Next action / Architecture decisions / Target Impression) and committing:
 
     docs: session close YYYY-MM-DD
 
